@@ -10,7 +10,6 @@ import { findNodeHandle } from "react-native";
 //   }
 // `;
 
-// 2. query find 
 export const CONTINENT_QUERY = gql`
 query {
     stores {
@@ -59,12 +58,14 @@ query {
 //   }
 // }
 
-// mutation updateArticle {
-//   updateArticle(id: "1", data: { title: "Hello" }) {
+// 3. Create new entry
+
+// mutation createStore {
+//   createStore(data: { name: "Hello"}) {
 //     data {
 //       id
 //       attributes {
-//         title
+//         name
 //       }
 //     }
 //   }
