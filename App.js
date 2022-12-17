@@ -7,7 +7,7 @@ import HomeScreen from './src/HomeScreen';
 // Initialize Apollo Client
 const client = new ApolloClient({
   // uri: 'https://countries.trevorblades.com/graphql',
-  uri:"http://localhost:1340/graphql",
+  uri:"http://localhost:1337/graphql",
   cache: new InMemoryCache()
 });
 

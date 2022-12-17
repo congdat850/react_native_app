@@ -19,6 +19,7 @@ export default function HomeScreen() {
                 <Text>{`- Name: ${name}`}</Text>
                 <Text>{`- Price: ${price}`}</Text>
                 <Text>{`- Describe: ${describe}`}</Text>
+                <br></br>
             </Pressable>
         );
     };
