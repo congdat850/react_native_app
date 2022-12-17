@@ -26,7 +26,7 @@ query {
   }
 `;
 
-// 1. query findOne 
+// 1. query for find
 
 // query {
 //   stores(filters:{name: {eq: "iphone 11"}}) {
@@ -42,7 +42,7 @@ query {
 //   }
 // }
 
-// 2. query find 
+// 2. query find all
 
 // query {
 //   stores {
@@ -58,7 +58,7 @@ query {
 //   }
 // }
 
-// 3. Create new entry
+// 3. create new entry
 
 // mutation createStore {
 //   createStore(data: { name: "Hello"}) {
@@ -70,4 +70,47 @@ query {
 //     }
 //   }
 // }
+
+// 4. update entry
+
+// mutation updateStore {
+//   updateStore(id: "6", data: { name: "test update" }) {
+//     data {
+//       id
+//       attributes {
+//         name
+//       }
+//     }
+//   }
+// }
+
+// 5. delete entry
+
+// mutation deleteStore {
+//   deleteStore(id: 6) {
+//     data {
+//       id
+//       attributes {
+//         name
+//       }
+//     }
+//   }
+// }
+
+// 6. findOne (delete the "s" at the end of the entry)
+
+// query {
+//   store(id:2) {
+//     data{
+//       id,
+//       attributes {
+//         name,
+//         describe,
+//         price,
+//         image
+//       }
+//     }
+//   }
+// }
+
 
